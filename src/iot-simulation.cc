@@ -220,7 +220,7 @@ int main(int argc, char *argv[]) {
     
     // Salvar resultados em arquivo
     std::ofstream outFile;
-    outFile.open("results.txt", std::ios::app);
+    outFile.open("./results/results.txt", std::ios::app);
     outFile << txPower << "," << pdr << "," << avgDelay << "," << totalThroughput << std::endl;
     outFile.close();
     

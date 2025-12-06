@@ -1,0 +1,24 @@
+
+======================================================================
+RELATÓRIO DE ANÁLISE DE DESEMPENHO - SIMULAÇÃO IoT
+======================================================================
+
+1. RESUMO EXECUTIVO
+
+   - Total de experimentos: 5
+   - PDR médio: 86.42%
+   - Atraso médio: 4.05 ms
+   - Throughput médio: 178.10 kbps
+
+2. ANÁLISE DE POTÊNCIA DE TRANSMISSÃO
+
+   - Melhor PDR: 99.95% com TxPower=22.0 dBm
+   - Menor atraso: 1.88 ms com TxPower=10.0 dBm
+   - Maior throughput: 205.98 kbps com TxPower=22.0 dBm
+
+3. RECOMENDAÇÕES
+
+   - Considerar aumentar potência ou reduzir densidade de nós
+   - O atraso está dentro de limites aceitáveis para IoT
+
+======================================================================
