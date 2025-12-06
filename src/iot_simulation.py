@@ -203,7 +203,7 @@ def main(argv):
     print("\n" + "="*50 + "\n")
     
     # Salvar resultados em arquivo
-    with open("results.txt", "a") as f:
+    with open("./results/results.txt", "a") as f:
         f.write(f"{tx_power},{pdr:.2f},{avg_delay:.2f},{total_throughput:.2f}\n")
     
     ns.core.Simulator.Destroy()

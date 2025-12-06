@@ -1,4 +1,4 @@
-#!/usr/bin/env python3
+1#!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 
 """
@@ -28,12 +28,12 @@ def plot_tx_power_analysis():
     Plota análise de variação de potência de transmissão
     """
     
-    if not os.path.exists("results.txt"):
+    if not os.path.exists("./results/results.txt"):
         print("Arquivo results.txt não encontrado!")
         return
     
     # Ler dados
-    df = pd.read_csv("results.txt")
+    df = pd.read_csv("./results/results.txt")
     
     # Criar diretório para gráficos
     os.makedirs("graphs", exist_ok=True)
@@ -123,11 +123,11 @@ def generate_summary_table():
     Gera tabela resumo dos resultados
     """
     
-    if not os.path.exists("results.txt"):
+    if not os.path.exists("./results/results.txt"):
         print("Arquivo results.txt não encontrado!")
         return
     
-    df = pd.read_csv("results.txt")
+    df = pd.read_csv("./results/results.txt")
     
     print("\n" + "="*70)
     print("TABELA RESUMO DOS RESULTADOS")
@@ -150,7 +150,7 @@ def plot_comparative_analysis():
     """
     
     files = {
-        'Potência TX': 'results.txt',
+        'Potência TX': './results/results.txt',
         'Taxa de Dados': 'results_datarate.txt',
         'Número de Nós': 'results_nodes.txt'
     }
@@ -203,11 +203,11 @@ def generate_report():
     Gera relatório completo em texto
     """
     
-    if not os.path.exists("results.txt"):
+    if not os.path.exists("./results/results.txt"):
         print("Arquivo results.txt não encontrado!")
         return
     
-    df = pd.read_csv("results.txt")
+    df = pd.read_csv("./results/results.txt")
     
     report = []
     report.append("\n" + "="*70)

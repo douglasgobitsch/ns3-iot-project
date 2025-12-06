@@ -18,10 +18,10 @@ def run_experiments():
     os.makedirs("results", exist_ok=True)
     
     # Limpar arquivo de resultados anterior
-    if os.path.exists("results.txt"):
-        os.remove("results.txt")
+    if os.path.exists("./results/results.txt"):
+        os.remove("./results/results.txt")
     
-    with open("results.txt", "w") as f:
+    with open("./results/results.txt", "w") as f:
         f.write("txPower,PDR,Delay,Throughput\n")
     
     print("\n" + "="*60)
