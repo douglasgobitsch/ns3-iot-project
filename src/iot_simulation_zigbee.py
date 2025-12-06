@@ -1,11 +1,3 @@
-#!/usr/bin/env python3
-# -*- coding: utf-8 -*-
-
-"""
-Simulação IoT - IEEE 802.15.4 (LR-WPAN/ZigBee)
-Ideal para aplicações IoT de baixo consumo
-"""
-
 import sys
 from ns import ns
 
